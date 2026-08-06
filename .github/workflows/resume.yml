@@ -5,6 +5,7 @@ on:
     paths:
       - "resume.yml"
       - "scripts/compact_certificates.py"
+      - ".github/workflows/resume.yml"
   workflow_dispatch:
 
 jobs:
