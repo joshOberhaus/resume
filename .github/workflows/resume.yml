@@ -8,6 +8,9 @@ on:
       - ".github/workflows/resume.yml"
   workflow_dispatch:
 
+permissions:
+  contents: write # only needed to publish the "latest" release below
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -29,6 +32,17 @@ jobs:
       - name: Compile PDF
         run: xelatex -halt-on-error resume.tex
 
+      # xelatex prints the final page count on its own ("Output written on
+      # ...(N pages)"), so no extra tooling (e.g. poppler) is needed here.
+      - name: Enforce single-page resume
+        run: |
+          pages=$(grep -oP '(?<=\()\d+(?= pages?\))' resume.log | tail -1)
+          echo "Page count: $pages"
+          if [ "$pages" != "1" ]; then
+            echo "::error::resume.pdf is $pages pages; it must stay 1 page."
+            exit 1
+          fi
+
       - name: Rename output
         run: mv resume.pdf JoshOberhaus.pdf
 
@@ -38,3 +52,14 @@ jobs:
           name: resume-pdf
           path: JoshOberhaus.pdf
           retention-days: 90
+
+      # Gives external sites a stable link to the newest build
+      # (https://github.com/joshOberhaus/resume/releases/download/latest/JoshOberhaus.pdf)
+      # without committing generated binaries into git history.
+      - name: Publish latest release
+        if: github.ref == 'refs/heads/main'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: Latest build
+          files: JoshOberhaus.pdf
