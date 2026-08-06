@@ -1,0 +1,10 @@
+# Template for the private, local-only contact overlay.
+#
+# Copy this file to contact-overlay.yml (already gitignored) and fill in
+# real values. `make private` merges it into resume.yml via
+# scripts/merge_overlay.py to produce a personal-use resume-private.pdf with
+# full contact details, while resume.yml and the public CI build stay free
+# of this data.
+content:
+  basics:
+    phone: "555-123-4567"

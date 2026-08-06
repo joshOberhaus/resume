@@ -13,7 +13,18 @@ repo's [devcontainer](.devcontainer/).
 make
 ```
 
-This produces `resume.pdf`.
+This produces `JoshOberhaus.pdf`. Output file names are all defined once,
+via the `NAME` variable in the [Makefile](Makefile).
+
+## Private variant
+
+- `make private` merges a gitignored, local-only `contact-overlay.yml` (copy
+  [contact-overlay.example.yml](contact-overlay.example.yml) to start) onto
+  `resume.yml` (via [scripts/merge_overlay.py](scripts/merge_overlay.py)) to
+  produce `JoshOberhaus-final.pdf` with full contact details (e.g. phone
+  number). Neither the overlay nor the generated output is committed or
+  built in CI, so `resume.yml` and the public build stay free of that data.
+
 
 ## Why the extra script?
 

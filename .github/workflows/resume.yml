@@ -12,6 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: yamlresume/yamlresume:latest
+      # The image's default user can't write to the runner's _temp dir
+      # (used by actions/checkout etc.), causing EACCES; force root.
+      options: --user root
 
     steps:
       - uses: actions/checkout@v4
@@ -25,9 +28,12 @@ jobs:
       - name: Compile PDF
         run: xelatex -halt-on-error resume.tex
 
+      - name: Rename output
+        run: mv resume.pdf JoshOberhaus.pdf
+
       - name: Upload PDF
         uses: actions/upload-artifact@v4
         with:
           name: resume-pdf
-          path: resume.pdf
+          path: JoshOberhaus.pdf
           retention-days: 90
