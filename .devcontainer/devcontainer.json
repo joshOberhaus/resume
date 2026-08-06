@@ -1,6 +1,8 @@
 {
   "name": "YAMLResume Dev Container",
   "dockerFile": "Dockerfile",
+  "remoteUser": "vscode",
+  "updateRemoteUserUID": true,
   "customizations": {
     "vscode": {
       "extensions": [
