@@ -1,0 +1,128 @@
+# yaml-language-server: $schema=https://yamlresume.dev/schema.json
+
+---
+content:
+  basics:
+    name: Josh Oberhaus
+    headline: Software Engineer
+    email: me@joshoberhaus.com
+    url: https://joshoberhaus.com
+    summary: |
+      Software engineer with 16 years in automotive, spanning embedded base software,
+      ADAS functions, tracking algorithms, and data engineering.
+      Builds evaluation systems that turn raw driving data - logged and resimulated - into trusted metrics and visualization tooling, developing multiple generations of KPI tools and triage pipelines used and adopted by colleagues across global teams.
+    profiles:
+      - network: GitHub
+        url: https://github.com/joshOberhaus
+        username: joshOberhaus
+      - network: LinkedIn
+        url: https://www.linkedin.com/in/joshoberhaus
+        username: joshoberhaus
+
+  work:
+    - name: Robert Bosch LLC
+      position: "Technical Expert - Validation | Performance Analysis"
+      location: "Hybrid | Plymouth, MI"
+      startDate: Jun 2025
+      summary: |
+        - Led ADS validation pipeline migration to Delta Lake, automating artifact generation and incident triage for disengagements, driver annotations, and safety triggers.
+        - Rewrote drive-based route matching to leverage H3 and newer geospatial databricks functions, resulting in 60x speedup. 
+        - Led coordination with tooling teams to surface validation events in-tool for post-drive tagging and developer artifact access, and personally implemented searching for events along defined reference routes.
+        - Coordinated with project-wide teams to resolve a Planner-induced neighbor-lane object disturbance causing violent highway swerving; fix shipped in time for a critical acquisition demo, with no recurrence observed.
+        - Integrated cross-team solutions for the same demo by coordinating with function and component teams, and personally scheduled and executed the test campaign.
+        - Maintained and reported global system-level KPIs each sprint.
+        - Migration recognized by leadership and highlighted company-wide as a model for cross-team data engineering.
+
+    - name: Robert Bosch LLC
+      position: "Technical Expert / Sr. SW Engineer - Perception | Tracking"
+      startDate: Sep 2018
+      endDate: Jun 2025
+      summary: |
+        - Served as Technical Lead for the global Perception / Tracking software team.
+        - Secured a strategic acquisition by realizing tracking gains from architectural changes to a 5-radar / 1-video sensor setup.
+        - Optimized radar-based perception for a new generation of radar sensor.
+        - Developed MATLAB-based tracking visualization features, including Kalman filter component projection and automation.
+        - Built Python-based KPI framework for single-target tracking analysis, automated as a Jenkins pipeline.
+        - Improved corner radar tracking performance by addressing assumptions made for front-facing radars, and reworked object type classification to be sensor-mounting agnostic, reducing missed-target scenarios.
+        - Acted as Product Owner for an Agile team; led critical customer demos outside primary area of expertise.
+
+    - name: Bosch Engineering North America
+      position: Software Engineer
+      location: Farmington Hills, MI
+      startDate: Apr 2012
+      endDate: Sep 2018
+      summary: |
+        - Component Responsible for Predictive Safety System (AEB, FCW) for a strategic OEM customer.
+        - Developed Python data mining and automated reporting tools for endurance run analysis.
+        - Developed a criticality classification solution for marine radar collision-warning systems.
+        - Designed Python code generation toolchain enabling a Bosch library to integrate into a third-party controller.
+        - Led global diagnostic communication team; Component Responsible for EPS and EBCM diagnostic systems.
+
+  skills:
+    - name: Languages
+      keywords:
+        - C++
+        - Python
+        - MATLAB
+        - C
+        - Julia
+    - name: Data & Analytics
+      keywords:
+        - SQL
+        - Delta Lake
+        - Databricks
+        - Spark
+    - name: Build & Infrastructure
+      keywords:
+        - Bazel
+        - Jenkins
+    - name: Embedded & Automotive
+      keywords:
+        - Automotive OS (AOS)
+        - ROS
+
+  education:
+    - institution: Kettering University
+      area: Computer Engineering
+      degree: Bachelor
+      score: Summa Cum Laude
+      endDate: "2012"
+
+  certificates:
+    - name: Azure Databricks & Spark for Data Engineers
+      issuer: Udemy
+      date: "2026"
+    - name: Multi-Object Tracking for Automotive Systems
+      issuer: ChalmersX (edX)
+      date: "2025"
+    - name: Sensor Fusion and Non-linear Filtering
+      issuer: ChalmersX (edX)
+      date: "2024"
+    - name: Deep Learning Specialization
+      issuer: Coursera
+      date: "2023"
+
+locale:
+  language: en
+
+layouts:
+  - engine: latex
+    template: jake
+    page:
+      margins:
+        top: 1.0cm
+        bottom: 1.0cm
+        left: 1.0cm
+        right: 1.0cm
+      showPageNumbers: false
+    typography:
+      fontSize: 10pt
+    sections:
+      aliases:
+        basics: Summary
+      order:
+        - basics
+        - work
+        - skills
+        - education
+        - certificates

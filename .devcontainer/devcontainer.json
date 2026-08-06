@@ -1,0 +1,12 @@
+{
+  "name": "YAMLResume Dev Container",
+  "dockerFile": "Dockerfile",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "James-Yu.latex-workshop",
+        "redhat.vscode-yaml"
+      ]
+    }
+  }
+}

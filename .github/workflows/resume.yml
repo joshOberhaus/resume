@@ -1,0 +1,33 @@
+name: Build Resume PDF
+
+on:
+  push:
+    paths:
+      - "resume.yml"
+      - "scripts/compact_certificates.py"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: yamlresume/yamlresume:latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build resume tex
+        run: yamlresume build --no-pdf resume.yml
+
+      - name: Compact certificates section
+        run: python3 scripts/compact_certificates.py resume.tex
+
+      - name: Compile PDF
+        run: xelatex -halt-on-error resume.tex
+
+      - name: Upload PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: resume-pdf
+          path: resume.pdf
+          retention-days: 90
