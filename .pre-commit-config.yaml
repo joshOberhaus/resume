@@ -1,0 +1,29 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-merge-conflict
+      - id: mixed-line-ending
+
+  # yamllint and ruff are installed system-wide in the devcontainer (see
+  # .devcontainer/Dockerfile), so run them directly instead of letting
+  # pre-commit manage its own copies.
+  - repo: local
+    hooks:
+      - id: yamllint
+        name: yamllint
+        entry: yamllint -c .yamllint.yaml
+        language: system
+        types: [yaml]
+      - id: ruff-check
+        name: ruff check
+        entry: ruff check
+        language: system
+        types: [python]
+      - id: ruff-format
+        name: ruff format
+        entry: ruff format --check
+        language: system
+        types: [python]
