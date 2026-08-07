@@ -11,6 +11,7 @@ Dicts are merged key-by-key, recursively; any other value in the overlay
 
 Usage: python3 scripts/merge_overlay.py <base.yml> <overlay.yml> <output.yml>
 """
+
 import sys
 from pathlib import Path
 
