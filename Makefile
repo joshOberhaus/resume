@@ -10,19 +10,18 @@ RESUME_PDF = $(NAME).pdf
 LONGFORM_PDF = $(NAME)-longform.pdf
 FINAL_PDF = $(NAME)-final.pdf
 
-# yamlresume always renders certificates two lines per entry with no layout
-# option to change it, so patch the generated .tex to a single line and
-# recompile.
+# yamlresume's jake template has no layout options for Skills/Education/
+# Certificates, so patch the generated .tex before recompiling.
 resume: resume.yml
 	yamlresume build --no-pdf resume.yml
-	python3 scripts/compact_certificates.py resume.tex
+	python3 scripts/patch_layout.py resume.tex
 	$(CC) -halt-on-error resume.tex
 	mv resume.pdf $(RESUME_PDF)
 
 private: resume.yml contact-overlay.yml
 	python3 scripts/merge_overlay.py resume.yml contact-overlay.yml resume-private.yml
 	yamlresume build --no-pdf resume-private.yml
-	python3 scripts/compact_certificates.py resume-private.tex
+	python3 scripts/patch_layout.py resume-private.tex
 	$(CC) -halt-on-error resume-private.tex
 	mv resume-private.pdf $(FINAL_PDF)
 

@@ -4,9 +4,9 @@ on:
   push:
     paths:
       - "resume.yml"
-      - "scripts/compact_certificates.py"
+      - "scripts/patch_layout.py"
       - ".github/workflows/resume.yml"
-  workflow_dispatch:
+  workflow_dispatch: # yamllint disable-line rule:empty-values
 
 permissions:
   contents: write # only needed to publish the "latest" release below
@@ -26,8 +26,8 @@ jobs:
       - name: Build resume tex
         run: yamlresume build --no-pdf resume.yml
 
-      - name: Compact certificates section
-        run: python3 scripts/compact_certificates.py resume.tex
+      - name: Patch generated layout (skills, education, certificates)
+        run: python3 scripts/patch_layout.py resume.tex
 
       - name: Compile PDF
         run: xelatex -halt-on-error resume.tex
