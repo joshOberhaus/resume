@@ -25,20 +25,19 @@ content:
       location: "Hybrid | Plymouth, MI"
       startDate: Jun 2025
       summary: |
-        - Led ADS validation pipeline migration to Delta Lake, automating artifact generation and incident triage for disengagements, driver annotations, and safety triggers.
-        - Rewrote drive-based route matching to leverage H3 and newer geospatial databricks functions, resulting in 60x speedup. 
+        - Led ADAS validation pipeline migration to Delta Lake, automating artifact generation and incident triage for disengagements, driver annotations, and safety triggers.
+        - Migration recognized by leadership and highlighted company-wide as a model for cross-team data engineering.
+        - Rewrote drive-based route matching to leverage H3 and newer geospatial databricks functions, resulting in 60x speedup.
         - Led coordination with tooling teams to surface validation events in-tool for post-drive tagging and developer artifact access, and personally implemented searching for events along defined reference routes.
-        - Coordinated with project-wide teams to resolve a Planner-induced neighbor-lane object disturbance causing violent highway swerving; fix shipped in time for a critical acquisition demo, with no recurrence observed.
         - Integrated cross-team solutions for the same demo by coordinating with function and component teams, and personally scheduled and executed the test campaign.
         - Maintained and reported global system-level KPIs each sprint.
-        - Migration recognized by leadership and highlighted company-wide as a model for cross-team data engineering.
 
     - name: Robert Bosch LLC
       position: "Technical Expert / Sr. SW Engineer - Perception | Tracking"
       startDate: Sep 2018
       endDate: Jun 2025
       summary: |
-        - Served as Technical Lead for the global Perception / Tracking software team.
+        - Served as Technical Lead for a global Perception / Tracking software team.
         - Secured a strategic acquisition by realizing tracking gains from architectural changes to a 5-radar / 1-video sensor setup.
         - Optimized radar-based perception for a new generation of radar sensor.
         - Developed MATLAB-based tracking visualization features, including Kalman filter component projection and automation.
@@ -61,22 +60,32 @@ content:
   skills:
     - name: Languages
       keywords:
-        - C++
         - Python
+        - C++
         - MATLAB
         - C
-        - Julia
+        - TypeScript
     - name: Data & Analytics
       keywords:
         - SQL
         - Delta Lake
         - Databricks
         - Spark
-    - name: Build & Infrastructure
+        - pandas
+        - NumPy
+    - name: Infrastructure & Tools
       keywords:
-        - Bazel
+        - Airflow
+        - Docker
+        - Git
+        - Azure
+        - Foxglove
+        - GitHub Copilot
+        - Claude Code
+        - GitHub Actions
         - Jenkins
-    - name: Embedded & Automotive
+        - Bazel
+    - name: Middleware & Frameworks
       keywords:
         - Automotive OS (AOS)
         - ROS
