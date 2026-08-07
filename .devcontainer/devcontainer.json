@@ -1,7 +1,7 @@
 {
   "name": "YAMLResume Dev Container",
   "dockerFile": "Dockerfile",
-  "remoteUser": "vscode",
+  "remoteUser": "texlive",
   "updateRemoteUserUID": true,
   "customizations": {
     "vscode": {
