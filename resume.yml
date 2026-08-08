@@ -28,26 +28,25 @@ content:
       # I also maintained and innovated in our KPI pipeline, by enabling the matching of events to routes, and by speeding up the drive-based route matching.
       # The team was also responsible for first round triage, and responsible for integrating content for demos, along with carrying out vehicle tests, all which I led during critical demos.
       summary: |
-        - Led ADAS validation pipeline migration to Delta Lake, automating artifact generation and incident triage for disengagements, driver annotations, and safety triggers.
-        - Migration recognized by leadership and highlighted company-wide as a model for cross-team data engineering.
-        - Rewrote drive-based route matching to leverage H3 and newer geospatial databricks functions, resulting in 60x speedup.
-        - Led coordination with tooling teams to surface validation events in-tool for post-drive tagging and developer artifact access, and personally implemented searching for events along defined reference routes.
-        - Integrated cross-team solutions for the same demo by coordinating with function and component teams, and personally scheduled and executed the test campaign.
-        - Maintained and reported global system-level KPIs each sprint.
+        - Architected and led a greenfield validation-event pipeline for a Level 3 ADAS program, authoring ~90% of the codebase while migrating off a legacy metadata store onto a Delta Lake / Databricks lakehouse.
+        - Partnered across teams to model validation events: disengagements, triggers, annotations and their artifacts; enabling a new triage UI that shortened the loop from field issue to curated training data.
+        - Recognized by leadership and highlighted company-wide as a model for cross-team data engineering.
+        - Re-engineered drive-based route matching with H3 indexing and Databricks geospatial functions for a 60x speedup.
+        - Owned global driving performance KPIs, first-round triage and demo integration; scheduled and executed the vehicle test campaign for critical customer demos.
 
     - name: Robert Bosch LLC
       position: "Technical Expert / Sr. SW Engineer - Perception | Tracking"
       startDate: Sep 2018
       endDate: Jun 2025
-      # In a complete tech shift (from where I had no tracking, nor linear algebra experience) I went from joining a platform Tracking team to leading it within two years, my first task was to implement a single object tracking KPI tool, and integrate it into CI. I then went on to make individual contributions to a strategic acquisition, which we ended up securing, and from that, led that team, where I enabled them by pushing a transition from MATLAB to FoxGlove tooling, greatly speeding up simulation, and architecting a python based framework that supported more sensor configurations, more metrics, and feature driven KPI tests.
+      # In a complete tech shift (from where I had no tracking, nor linear algebra knowledge) I went from joining a platform Tracking team to leading it within two years, my first task was to implement a single object tracking KPI tool, and integrate it into CI. I then went on to make individual contributions to a strategic acquisition, which we ended up securing, and from that, led that team, where I enabled them by pushing a transition from MATLAB to FoxGlove tooling, greatly speeding up simulation, and architecting a python based framework that supported more sensor configurations, more metrics, and feature driven KPI tests.
       summary: |
-        - Served as Technical Lead for a global Perception / Tracking software team.
-        - Secured a strategic acquisition by realizing tracking gains from architectural changes to a 5-radar / 1-video sensor setup.
-        - Optimized radar-based perception for a new generation of radar sensor.
-        - Developed MATLAB-based tracking visualization features, including Kalman filter component projection and automation.
-        - Built Python-based KPI framework for single-target tracking analysis, automated as a Jenkins pipeline.
-        - Improved corner radar tracking performance by addressing assumptions made for front-facing radars, and reworked object type classification to be sensor-mounting agnostic, reducing missed-target scenarios.
-        - Acted as Product Owner for an Agile team; led critical customer demos outside primary area of expertise.
+        - Delivered the platform's first single-object tracking KPI tool and integrated it into CI for automated, repeatable evaluation.
+        - Drove key contributions that secured a strategic acquisition, realizing tracking gains from architectural changes for a 5-radar / 1-video sensor configuration, and led the team formed to deliver it.
+        - Designed next-generation multi-object tracking KPI framework supporting more sensors, metrics, and feature-driven tests.
+        - Acted as a force multiplier by aggressively resolving team pain points - migrating tooling from MATLAB to Foxglove and profiling out unnecessary debug-variable writes for a 6x simulation speedup.
+        - Improved corner-radar tracking by addressing front-facing radar assumptions and making object-type classification sensor-mounting agnostic, reducing missed-target scenarios; optimized perception for a new radar generation.
+        - Developed MATLAB-based tracking-visualization features, including Kalman-filter component projection and automation.
+        - Stepped in as acting Product Owner for months at a time and led critical customer demos beyond my core role.
 
     - name: Bosch Engineering North America
       position: Software Engineer
@@ -59,11 +58,12 @@ content:
       # I performed the first integration of a Third Party SW into a Bosch EBCM.
       # I also enabled the first integration of a Bosch SW library into a Third Party EPS, and developed the tool chain to enable that.
       summary: |
-        - Component Responsible for Predictive Safety System (AEB, FCW) for a strategic OEM customer.
-        - Developed Python data mining and automated reporting tools for endurance run analysis.
-        - Developed a novel criticality classification solution for marine radar collision-warning systems.
-        - Designed Python code generation toolchain enabling a Bosch library to integrate into a third-party controller.
-        - Led global diagnostic communication team; Component Responsible for EPS and EBCM diagnostic systems.
+        - Served as Component Responsible for Predictive Safety Systems (AEB, FCW) for a strategic OEM customer.
+        - Built Python-based data-mining and automated reporting tools for endurance-run analysis, surfacing fleet-level statistics - such as location-based occurrence rates - previously unavailable to the team.
+        - Led global diagnostic and network-communication teams; Component Responsible for several different products.
+        - Performed the first integration of third-party software into a Bosch EBCM.
+        - Enabled the first integration of a Bosch software library into a third-party EPS, developing the Python toolchain behind it.
+        # - Developed a novel criticality-classification solution for marine radar collision-warning systems.
 
   skills:
     - name: Languages
@@ -87,12 +87,16 @@ content:
         - Docker
         - Git
         - Azure
+        - Bazel
         - Foxglove
         - GitHub Copilot
         - Claude Code
-        - GitHub Actions
+    - name: Testing & CI/CD
+      keywords:
+        - pytest
+        - GoogleTest
         - Jenkins
-        - Bazel
+        - GitHub Actions
     - name: Middleware & Frameworks
       keywords:
         - Automotive OS (AOS)
