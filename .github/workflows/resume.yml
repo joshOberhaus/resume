@@ -61,5 +61,5 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: latest
-          name: Latest build
+          name: ${{ github.event.head_commit.timestamp }}
           files: JoshOberhaus.pdf
