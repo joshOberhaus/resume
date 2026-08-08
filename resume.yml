@@ -24,6 +24,9 @@ content:
       position: "Technical Expert - Validation | Performance Analysis"
       location: "Hybrid | Plymouth, MI"
       startDate: Jun 2025
+      # In another complete shift of technologies (a greater one this time from embedded to cloud), I was brought onto a completely different project, a Level 3 ADAS system. For this, I architected, led, and wrote roughly 90% of a new pipeline (part of a necessary migration from a proprietary metadatastore) which handled validation events (disengagements, triggers, annotations) - this enabled an entirely new UI approach for event triage, leading to a much faster turnaround from issue -> new data selected for models, and easing developer analysis.
+      # I also maintained and innovated in our KPI pipeline, by enabling the matching of events to routes, and by speeding up the drive-based route matching.
+      # The team was also responsible for first round triage, and responsible for integrating content for demos, along with carrying out vehicle tests, all which I led during critical demos.
       summary: |
         - Led ADAS validation pipeline migration to Delta Lake, automating artifact generation and incident triage for disengagements, driver annotations, and safety triggers.
         - Migration recognized by leadership and highlighted company-wide as a model for cross-team data engineering.
@@ -36,6 +39,7 @@ content:
       position: "Technical Expert / Sr. SW Engineer - Perception | Tracking"
       startDate: Sep 2018
       endDate: Jun 2025
+      # In a complete tech shift (from where I had no tracking, nor linear algebra experience) I went from joining a platform Tracking team to leading it within two years, my first task was to implement a single object tracking KPI tool, and integrate it into CI. I then went on to make individual contributions to a strategic acquisition, which we ended up securing, and from that, led that team, where I enabled them by pushing a transition from MATLAB to FoxGlove tooling, greatly speeding up simulation, and architecting a python based framework that supported more sensor configurations, more metrics, and feature driven KPI tests.
       summary: |
         - Served as Technical Lead for a global Perception / Tracking software team.
         - Secured a strategic acquisition by realizing tracking gains from architectural changes to a 5-radar / 1-video sensor setup.
@@ -50,10 +54,14 @@ content:
       location: Farmington Hills, MI
       startDate: Apr 2012
       endDate: Sep 2018
+      # Major contributions: When working as the component responsible for Predictive Safety Systems (AEB, FCW) - I innovated heavily in data mining (python), specifically with endurance run analysis. Enabling statitics that we were not able to offer before (too much detail probably: but being able to see how many times we've driven by a single spot to see occurrece rate)
+      # I served as diagnostic and network communication component responsibles for several product types, and led global teams for some of them.
+      # I performed the first integration of a Third Party SW into a Bosch EBCM.
+      # I also enabled the first integration of a Bosch SW library into a Third Party EPS, and developed the tool chain to enable that.
       summary: |
         - Component Responsible for Predictive Safety System (AEB, FCW) for a strategic OEM customer.
         - Developed Python data mining and automated reporting tools for endurance run analysis.
-        - Developed a criticality classification solution for marine radar collision-warning systems.
+        - Developed a novel criticality classification solution for marine radar collision-warning systems.
         - Designed Python code generation toolchain enabling a Bosch library to integrate into a third-party controller.
         - Led global diagnostic communication team; Component Responsible for EPS and EBCM diagnostic systems.
 
