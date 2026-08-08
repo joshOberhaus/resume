@@ -8,9 +8,8 @@ content:
     email: me@joshoberhaus.com
     url: https://joshoberhaus.com
     summary: |
-      Software engineer with 16 years in automotive, spanning embedded base software,
-      ADAS functions, tracking algorithms, and data engineering.
-      Builds evaluation systems that turn raw driving data - logged and resimulated - into trusted metrics and visualization tooling, developing multiple generations of KPI tools and triage pipelines used and adopted by colleagues across global teams.
+      Software engineer with 16 years in automotive, specializing in the evaluation systems that accelerate algorithm development.
+      Turns on-road and resimulated driving data into trusted metrics, KPI tooling, and dashboards adopted across global teams - a fast study who has ramped from embedded software to radar tracking to cloud data engineering.
     profiles:
       - network: GitHub
         url: https://github.com/joshOberhaus
