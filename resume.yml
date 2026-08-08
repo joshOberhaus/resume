@@ -31,16 +31,16 @@ content:
         - Owned global driving performance KPIs, first-round triage and demo integration; scheduled and executed the vehicle test campaign for critical customer demos.
 
     - name: Robert Bosch LLC
-      position: "Technical Expert / Sr. SW Engineer - Perception | Tracking"
+      position: "Technical Expert / Sr. SW Engineer - Fusion | Tracking"
       startDate: Sep 2018
       endDate: Jun 2025
       summary: |
-        - Served as Technical Lead for a global Perception / Tracking team.
+        - Served as Technical Lead for a global Fusion / Tracking team.
         - Delivered the platform's first single-object tracking KPI tool and integrated it into CI for automated, repeatable evaluation.
         - Drove key contributions that secured a strategic acquisition, realizing tracking gains from architectural changes for a 5-radar / 1-video sensor configuration, and led the team formed to deliver it.
         - Designed next-generation multi-object tracking KPI framework supporting more sensors, metrics, and feature-driven tests.
         - Acted as a force multiplier by aggressively resolving team pain points - migrating tooling from MATLAB to Foxglove and profiling out unnecessary debug-variable writes for a 6x simulation speedup.
-        - Improved corner-radar tracking by addressing sensor-mounting assumptions, reducing missed-target scenarios; optimized perception for a new radar generation.
+        - Improved corner-radar tracking by addressing sensor-mounting assumptions, reducing missed-target scenarios; optimized tracking for a new radar generation.
         - Developed MATLAB-based tracking-visualization features, including Kalman-filter component projection and automation.
         - Acted as Product Owner for an Agile team and led critical customer demos beyond my core role.
 
