@@ -5,7 +5,7 @@ content:
   basics:
     name: Josh Oberhaus
     headline: Software Engineer
-    email: me@joshoberhaus.com
+    email: josh.oberhaus@gmail.com
     url: https://joshoberhaus.com
     summary: |
       Software engineer with 16 years in automotive, specializing in the evaluation systems that accelerate algorithm development.
@@ -23,9 +23,6 @@ content:
       position: "Technical Expert - Validation | Performance Analysis"
       location: "Hybrid | Plymouth, MI"
       startDate: Jun 2025
-      # In another complete shift of technologies (a greater one this time from embedded to cloud), I was brought onto a completely different project, a Level 3 ADAS system. For this, I architected, led, and wrote roughly 90% of a new pipeline (part of a necessary migration from a proprietary metadatastore) which handled validation events (disengagements, triggers, annotations) - this enabled an entirely new UI approach for event triage, leading to a much faster turnaround from issue -> new data selected for models, and easing developer analysis.
-      # I also maintained and innovated in our KPI pipeline, by enabling the matching of events to routes, and by speeding up the drive-based route matching.
-      # The team was also responsible for first round triage, and responsible for integrating content for demos, along with carrying out vehicle tests, all which I led during critical demos.
       summary: |
         - Architected and led a greenfield validation-event pipeline for a Level 3 ADAS program, authoring ~90% of the codebase while migrating off a legacy metadata store onto a Delta Lake / Databricks lakehouse.
         - Partnered across teams to model validation events: disengagements, triggers, annotations and their artifacts; enabling a new triage UI that shortened the loop from field issue to curated training data.
@@ -37,31 +34,27 @@ content:
       position: "Technical Expert / Sr. SW Engineer - Perception | Tracking"
       startDate: Sep 2018
       endDate: Jun 2025
-      # In a complete tech shift (from where I had no tracking, nor linear algebra knowledge) I went from joining a platform Tracking team to leading it within two years, my first task was to implement a single object tracking KPI tool, and integrate it into CI. I then went on to make individual contributions to a strategic acquisition, which we ended up securing, and from that, led that team, where I enabled them by pushing a transition from MATLAB to FoxGlove tooling, greatly speeding up simulation, and architecting a python based framework that supported more sensor configurations, more metrics, and feature driven KPI tests.
       summary: |
+        - Served as Technical Lead for a global Perception / Tracking team.
         - Delivered the platform's first single-object tracking KPI tool and integrated it into CI for automated, repeatable evaluation.
         - Drove key contributions that secured a strategic acquisition, realizing tracking gains from architectural changes for a 5-radar / 1-video sensor configuration, and led the team formed to deliver it.
         - Designed next-generation multi-object tracking KPI framework supporting more sensors, metrics, and feature-driven tests.
         - Acted as a force multiplier by aggressively resolving team pain points - migrating tooling from MATLAB to Foxglove and profiling out unnecessary debug-variable writes for a 6x simulation speedup.
-        - Improved corner-radar tracking by addressing front-facing radar assumptions and making object-type classification sensor-mounting agnostic, reducing missed-target scenarios; optimized perception for a new radar generation.
+        - Improved corner-radar tracking by addressing sensor-mounting assumptions, reducing missed-target scenarios; optimized perception for a new radar generation.
         - Developed MATLAB-based tracking-visualization features, including Kalman-filter component projection and automation.
-        - Stepped in as acting Product Owner for months at a time and led critical customer demos beyond my core role.
+        - Acted as Product Owner for an Agile team and led critical customer demos beyond my core role.
 
     - name: Bosch Engineering North America
       position: Software Engineer
       location: Farmington Hills, MI
       startDate: Apr 2012
       endDate: Sep 2018
-      # Major contributions: When working as the component responsible for Predictive Safety Systems (AEB, FCW) - I innovated heavily in data mining (python), specifically with endurance run analysis. Enabling statitics that we were not able to offer before (too much detail probably: but being able to see how many times we've driven by a single spot to see occurrece rate)
-      # I served as diagnostic and network communication component responsibles for several product types, and led global teams for some of them.
-      # I performed the first integration of a Third Party SW into a Bosch EBCM.
-      # I also enabled the first integration of a Bosch SW library into a Third Party EPS, and developed the tool chain to enable that.
       summary: |
         - Served as Component Responsible for Predictive Safety Systems (AEB, FCW) for a strategic OEM customer.
         - Built Python-based data-mining and automated reporting tools for endurance-run analysis, surfacing fleet-level statistics - such as location-based occurrence rates - previously unavailable to the team.
         - Led global diagnostic and network-communication teams; Component Responsible for several different products.
-        - Performed the first integration of third-party software into a Bosch EBCM.
         - Enabled the first integration of a Bosch software library into a third-party EPS, developing the Python toolchain behind it.
+        # - Performed the first integration of third-party software into a Bosch EBCM.
         # - Developed a novel criticality-classification solution for marine radar collision-warning systems.
 
   skills:
